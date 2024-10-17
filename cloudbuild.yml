@@ -11,3 +11,5 @@ steps:
   - name: 'gcr.io/cloud-builders/gcloud'
     args: ['run', 'deploy', 'my-app', '--image', 'gcr.io/$PROJECT_ID/my-app', '--region', 'us-central1']
 serviceAccount: gcp-devops-437716@appspot.gserviceaccount.com
+options:
+  logging: CLOUD_LOGGING_ONLY
