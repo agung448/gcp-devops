@@ -4,5 +4,4 @@ steps:
 logsBucket: gs://gcp-devops-437716_cloudbuild
 options:
   logging: NONE
-  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 serviceAccount: [SERVICE_ACCOUNT_EMAIL]
