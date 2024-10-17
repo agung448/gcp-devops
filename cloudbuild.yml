@@ -3,6 +3,6 @@ steps:
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/my-app', '.']
 logsBucket: gs://gcp-devops-437716_cloudbuild
 options:
-  logging: CLOUD_LOGGING_ONLY
+  logging: NONE
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 serviceAccount: [SERVICE_ACCOUNT_EMAIL]
