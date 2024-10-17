@@ -4,4 +4,4 @@ steps:
 logsBucket: gs://gcp-devops-437716_cloudbuild
 options:
   logging: NONE
-serviceAccount: [SERVICE_ACCOUNT_EMAIL]
+serviceAccount: [gcp-devops-437716@appspot.gserviceaccount.com]
