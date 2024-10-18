@@ -1,0 +1,15 @@
+# steps:
+#   - name: 'gcr.io/cloud-builders/docker'
+#     args: 'build', '-t', 'gcr.io/$PROJECT_ID/my-app', '.'
+# logsBucket: gs://gcp-devops-437716_cloudbuild
+# options:
+#   logging: NONE
+# serviceAccount: gcp-devops-437716@appspot.gserviceaccount.com
+steps:
+  - name: 'gcr.io/gcp-devops-437716/myapp'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/my-app', '.']
+  - name: 'gcr.io/gcp-devops-437716/myapp'
+    args: ['run', 'deploy', 'my-app', '--image', 'gcr.io/$PROJECT_ID/my-app', '--region', 'us-central1']
+serviceAccount: gcp-devops-437716@appspot.gserviceaccount.com
+options:
+  logging: NONE
