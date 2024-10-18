@@ -6,3 +6,5 @@ steps:
 
 images:
   - 'gcr.io/$PROJECT_ID/my-app:latest'
+logsBucket: gs://cloud-build-jumbo
+serviceAccount: gcp-devops-437716@appspot.gserviceaccount.com
